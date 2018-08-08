@@ -1,0 +1,39 @@
+<section class="Index">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <center>
+          <%= image_tag('robo.jpg', class: "img-responsive IMG", id: "navbar-logo", width: "150px", height: "150px") %>
+          <% @user.email.slice! "@gmail.com" %>
+          
+          <h3><%= @user.email.capitalize %></h3>
+          <h3>Welcommmmmm... HaHaHaHaHa...!</h3>
+
+          
+        </center>
+      </div>
+      <div class="col-7 info">
+        <p>Souhaitez-vous connaitre la réponse à la question que tout le monde se pose ?<br>
+        Souhaitez-vous connaitre la réponse de l'Univers ?</p>
+        <a href="/thgttg-secret" class="btn btn-primary">Cliquez ici</a>
+        <br><br>
+
+        <p>Sinon, nous vous recommandons fortement de supprimer votre compte, afin d'éviter de céder à la tentation.</p>
+        <%= render 'user' %>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</section>
